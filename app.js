@@ -40,7 +40,7 @@ d3.json("./career.json", function(data) {
   var myColor = d3.scaleOrdinal()
     .domain(["CNA Insurance", "Allstate", "Loyola University Chicago", "Northwestern University", "Certification", 
     "Conference Speaker", "Adopted a Pet", "Athletics", "Personal"])
-    .range(["ec4646", "23689b", "#c05555", "726a95", "99bbad", "ffee93", "a0c1b8", "314e52", "719fb0"]);
+    .range(["ec4646", "23689b", "#c05555", "726a95", "99bbad", "ffee93", "ff7b54", "314e52", "719fb0"]);
 
   // -1- Create a tooltip div that is hidden by default:
   var tooltip = d3.select("#my_dataviz")
