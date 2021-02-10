@@ -10,6 +10,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Load d3.js -->
+		<script src="https://d3js.org/d3.v4.js"></script>
+
 	</head>
 	<body class="is-preload">
 
@@ -69,7 +72,23 @@
 										 <br /> <br />
 										 Please feel free to reach out, I'm always looking to make new connections or get involved in new challenges.  
 
-								 </p>
+								 	</p>
+									<!-- Create a div where the graph will take place -->
+									<div class="container">
+										<h4>Resume: as d3.js bubbles</h4>
+										<div id="my_dataviz"></div>
+											<!-- A bit of CSS: change stroke color of circle on hover (white -> black) -->
+											<style>
+											.bubbles {
+												stroke-width: 2px;
+												stroke: white;
+											}
+											.bubbles:hover {
+												stroke: black;
+											}
+											</style>								
+											<script src="app.js"></script>
+									</div>
 								</div>
 							</section>
 
