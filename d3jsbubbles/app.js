@@ -13,7 +13,7 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.json("./career.json", function(data) {
+d3.json("./d3jsbubbles/json_data/career.json", function(data) {
   // Add X axis
   var x = d3.scaleLinear()
     .domain([2012, 2021])
@@ -39,8 +39,8 @@ d3.json("./career.json", function(data) {
   // Add a scale for bubble color
   var myColor = d3.scaleOrdinal()
     .domain(["CNA Insurance", "Allstate", "Loyola University Chicago", "Northwestern University", "Certification", 
-    "Conference Speaker", "Adopted a Pet", "Athletics", "Personal"])
-    .range(["ec4646", "23689b", "#c05555", "726a95", "99bbad", "ffee93", "ff7b54", "314e52", "719fb0"]);
+    "Conference Speaker", "Adopted a Pet", "Athletics", "Personal", "Georgia Tech"])
+    .range(["ec4646", "23689b", "#c05555", "726a95", "99bbad", "ffee93", "ff7b54", "314e52", "719fb0", "BDB76B"]);
 
   // -1- Create a tooltip div that is hidden by default:
   var tooltip = d3.select("#my_dataviz")
@@ -67,17 +67,25 @@ d3.json("./career.json", function(data) {
   var moveTooltip = function(d) {
     tooltip
       .style("left", (d3.mouse(this)[0]+30) + "px")
-      .style("background-color", "#4acaa8")
+      .style("background-color", "#6eb1ec")
       .style("top", (d3.mouse(this)[1]+30) + "px")
   }
   var hideTooltip = function(d) {
     tooltip
     .style("opacity", 1)
-    .html("Hover over a bubble to see what I was up to")
+    .html("Hover over a bubble to see what I was up to. <br> Click the node for more details.")
     .style("background-color", "grey")
     .style("left", (d3.mouse(this)[0]+30) + "px")
     .style("top", (d3.mouse(this)[1]+30) + "px")
   }
+
+  var openNewSheet = function(d) {
+        console.log('open tab')
+        window.open(
+          d.link,
+          '_blank' // <- This is what makes it open in a new window.
+        );
+      }
 
   // Add dots
   svg.append('g')
@@ -94,6 +102,7 @@ d3.json("./career.json", function(data) {
     .on("mouseover", showTooltip )
     .on("mousemove", moveTooltip )
     .on("mouseleave", hideTooltip )
+    .on("click", openNewSheet )
     
 
 

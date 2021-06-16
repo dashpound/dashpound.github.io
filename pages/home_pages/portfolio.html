@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!-- Load d3.js -->
+		<script src="https://d3js.org/d3.v4.js"></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q12BV5VBS"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-1Q12BV5VBS');
+		</script>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="/images/casual_red_shirt.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">John Kiley</a></h1>
+					<p>Data Scientist<br />
+					</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="/index.html">About</a></li>
+						<li><a href="/pages/home_pages/interests.html">Interests</a></li>
+						<li><a href="/pages/home_pages/portfolio.html" class="active">Portfolio</a></li>
+						<li><a href="/pages/blogposts/blog_landingpage.html">Blog</a></li>
+						<li><a href="/pages/home_pages/resources.html">Favorite Resources</a></li>						
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://twitter.com/dashpound" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/in/johnekiley/" class="icon brands fa-linkedin"><span class="label">Facebook</span></a></li>
+						<li><a href="https://github.com/dashpound" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:johnkiley@live.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+				
+						<!-- Three -->
+                        <section id="one">
+                            <div class="image main" data-position="center">
+                                <img src="/images/banner2.jpg" alt="" />
+                            </div>
+                            <div class="container">
+                                <header class="major">
+                                <h2>Portfolio</h2>
+                                <p>A handful of sample projects</p>
+                                </header>
+                                <div class="features">
+                                    <article>
+                                        <a href="https://cognoclick.herokuapp.com/" class="image"><img src="/images/amazon.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4><a href="https://github.com/dashpound/capstone">Amazon Recommendation Engine</a></h4>
+                                            <p>Build a suite of custom models to create content-based and collaborative based recommendation models utilizing extracted Amazon customer review data.  
+                                                <br /><br /> Solution utilized deep learning and natural language processing techniques to produce recommendations.
+                                                <br /><br />Utilized plotly's Dash for eda visualization.
+                                                <br /> Deployed dashboard on Heroku.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="https://github.com/dashpound/poppunk_lyric_gen" class="image"><img src="/images/lyrics.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4><a href="https://github.com/dashpound/poppunk_lyric_gen">Pop Punk Song Lyrics Generator</a></h4>
+                                            <p>
+                                                I grew up with the former lead singer of a pop-punk banded called <a href="https://en.wikipedia.org/wiki/Real_Friends_(band)"> Real Friends </a>.
+                                                It seemed like it would be a fun challenging project to see if I couldn't write a song for him using AI.<br /> <br />
+                                                
+                                                Solution required building my own data set by creating a scrapy bot to extract lyrics data from AZlyrics and compile a corpus for training.
+                                                This set was passed to a recurrent neural network and a generative deep learning model to try to replicate Dan's style.
+
+                                                <br /><br />
+                                                <a href=https://towardsdatascience.com/ai-generates-taylor-swifts-song-lyrics-6fd92a03ef7e>Inspired by Mohammed Ma'amari's Taylor Swift lyrics generator </a>
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="https://github.com/dashpound/grokking_algorithms_applications" class="image"><img src="/images/grokking.jpg" alt="" /></a>
+                                        <div class="inner">
+                                            <h4><a href="https://github.com/dashpound/grokking_algorithms_applications"> Grokking Algorithms - Benchmarking </a></h4>
+                                            <p><a href="https://www.manning.com/books/grokking-algorithms"> Grokking Algorithms </a> is a great book that uses comics to explain key concepts 
+                                                in computer science.  This repository is a collection of jupyter workbooks where I benchmark various algorithms against each other while manually implementing them in python. 
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; John Kiley. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
